@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+const friends = [
+  {
+    id:1,
+    name : "ChoiJaeHawn",
+    image:"/images/choi.jpg"
+  },
+  {
+    id:2,
+    name : "KangDongWon",
+    image:"/images/dongwon.jpg"
+  }
+];
+function FriendList({name,image}){
+  return (
+  <div>
+    <h2>Friend name is {name}</h2>
+    <img src={image} alt="" />
+  </div>);
 
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className="App">
+    {friends.map(friend => (
+      <FriendList key={friend.id}name={friend.name} image={friend.image} />
+    ))}
+  </div>
   );
+      
 }
 
 export default App;
