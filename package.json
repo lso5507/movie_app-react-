@@ -11,13 +11,15 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-show-more-text": "^1.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy":"gh-pages -d build",
-    "predeploy":"yarn run build"
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +37,4 @@
     ]
   },
   "homepage": "http://lso5507.github.io/movie_app-react-/"
-
 }

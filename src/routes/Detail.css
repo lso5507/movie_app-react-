@@ -1,0 +1,46 @@
+.contain{
+    display:flex;
+    
+    
+}
+.img_content{
+    display:flex;
+    flex-direction: column;
+}
+.img_content img{
+    max-height:402px;
+    margin:30px;
+    
+}
+.img_content a span{
+    color:blue;
+    font-weight: bold;
+}
+.img_content a{
+    text-decoration: none;
+    position: relative;
+    top:-30px;
+    text-align: center;
+    
+}
+.detail_title{
+    font-size: 30px;
+    
+}
+.detail_text{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    padding-left: 10px;
+}
+.detail_text li{
+    margin-right:10px;
+    opacity: 0.8;
+    font-size:13px
+}
+.detail_summary{
+    max-width: 500px;
+    font-weight: 500;
+}

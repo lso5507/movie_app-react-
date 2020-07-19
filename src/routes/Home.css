@@ -1,8 +1,9 @@
 *{
     box-sizing: border-box;
 }
+
 body{
-    background-color: whitesmoke;
+    background-color: #E6E6E6;
     margin:0;
     padding: 0;
 }
@@ -28,7 +29,7 @@ body,
     justify-content: space-between;
     flex-wrap:wrap;
     padding:50px;
-    width:60%;
+    width:80%;
 
 }
 .movies .movie{
@@ -39,10 +40,12 @@ body,
     align-items: flex-start;
     
     font-weight: 300;
-    padding-left:10px
+    padding-left:20px
 }
 .movie img{
-    max-height: 180px;
+    max-height: 150px;
+    max-width: 150px;
+    min-width: 150px;
     position: relative;
     top:-20px;
     width:100%;
@@ -51,13 +54,12 @@ body,
 .movie_title{
     padding-left: 10px;
 }
-h3,h5{
-    font-weight: 300;
+.movie_summary{
+    font-weight: 400;
     opacity: 0.8;
+    
 }
-#movie_summary{
-    padding:10px;
-}
+
 .movie_text{
     display:flex;
     list-style:none;
@@ -69,9 +71,16 @@ h3,h5{
 .movie_text li{
     margin-right:10px;
     opacity: 0.8;
+    font-size:13px
 }
 .movie_data{
     padding-left:20px;
     margin-right:20px
+}
+.movie_about{
+    font-weight: bold;
+    color:blue;
+    display:inline;
+    cursor: pointer;
 }
 
