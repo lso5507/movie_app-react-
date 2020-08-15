@@ -7,13 +7,7 @@ import Detail from './routes/Detail';
 
 function App(){
   return(
-  <HashRouter>
-    
-    <Route path="/" exact={true} component={Home} />
-    <Route path="/about" exact={true} component={About} />
-    <Route path="/movie/:id"   component={Detail} />
-
-  </HashRouter>
+    <h1>test</h1>
   );
 }
 export default App;
